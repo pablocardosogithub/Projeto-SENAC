@@ -1,0 +1,96 @@
+<!DOCTYPE>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    
+    <style>
+        body{
+            background-color: #5D240A;
+        }
+        
+        #container{
+            background-color: #32CD32;
+            margin: 60px;
+            height: 550px;
+        }
+
+        #navegacao {
+            margin: 25px;
+            width: 95.5%;
+            height: 35px;
+            background-color: #5D240A;
+        }
+        
+        #navegacao ul {
+            margin:0;
+            padding:3px
+        }
+        
+        #navegacao ul li { display:inline-block }
+        
+        #navegacao ul li a {
+            font-size: 1.5em;
+            text-decoration: inherit;
+            color: #FFF;
+            padding: 1px 1px 1px 90px;
+        }
+        
+        #navegacao ul li a:hover {
+            color: #32CD32;
+        }
+        
+        h1{
+            text-align: center;
+        }
+        
+        p {
+            font-size: 1.5em; margin: 50px;
+            text-align: justify;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="container">
+        <form class="form-signin" method="POST" action="valida.php">        
+            <div class="box-parent-login">
+                <div class="well bg-white box-login">
+                    <h1 class="ls-login-logo">Faça parte da Família Reverde</h1>
+
+                    <div id="navegacao">
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="produtos.html">Podutos</a></li>
+                            <li><a href="./sobre_nos.html">Sobre Nós</a></li>
+                            <li><a href="./login.html">Login</a></li>
+                            <li><a href="./contatos.html">Contatos</a></li>
+                        </ul>
+                    </div>
+
+                    <form role="form">
+                        <fieldset>
+                            <div class="form-group ls-login-user">
+                                <label for="userLogin">Usuário</label>
+                                <input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
+                            </div>
+
+                            <div class="form-group ls-login-password">
+                                <label for="userPassword">Senha</label>
+                                <input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
+                            </div>
+
+                            <a href="#" class="ls-login-forgot">Esqueci minha senha</a>
+
+                            <input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block">
+                            <p class="txt-center ls-login-signup">Não possui cadastro na Reverde?
+                            <a href="cadastro.html">Cadastre-se agora</a>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </form>    
+    </div>
+</body>
+</html>
