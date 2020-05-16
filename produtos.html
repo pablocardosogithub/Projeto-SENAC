@@ -29,6 +29,31 @@
             font-family: cursive;  
         }
         
+        #navegacao {
+            margin: 25px;
+            width: 95.5%;
+            height: 35px;
+            background-color: #5D240A;
+        }
+        
+        #navegacao ul {
+            margin:0;
+            padding:3px
+        }
+        
+        #navegacao ul li { display:inline-block }
+        
+        #navegacao ul li a {
+            font-size: 1.5em;
+            text-decoration: inherit;
+            color: #FFF;
+            padding: 1px 1px 1px 90px;
+        }
+
+        #navegacao ul li a:hover {
+            color: #32CD32;
+        }
+
         #gallery {
 		background-color: #32CD32;
 		padding: 10px;
@@ -56,6 +81,16 @@
     <div id="container">
         <h1>REVERDE - Produtos Naturais</h1>
         
+        <div id="navegacao">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="produtos.html">Podutos</a></li>
+                <li><a href="./sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./contatos.html">Contatos</a></li>
+            </ul>
+        </div>
+
         <div id="gallery">
             <ul><li>
             <a href="img/agar_agar.png" rel="lightbox[plants]" title="Ágar-Ágar"><img src="img/agar_agar.png" alt="Imagem do produto" height="200px" /></a>
